@@ -93,7 +93,7 @@ header a{
 @keyframes branimation{
     from{}
     to{
-        transform: rotate3d(180,90,45,360deg);
+        transform: rotate3d(200,10,25,360deg);
     }
 }
 .utilidades{

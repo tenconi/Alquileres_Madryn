@@ -75,8 +75,7 @@ nav{
     border-bottom: 2px solid $primario;    
 }
 // BLOQUE 3
-.card{
-}
+
 .card__img-top{}
 .card__body {
     display: flex;
@@ -94,6 +93,12 @@ nav{
     justify-content: center;
     flex-direction: row;
     margin: auto;
+}
+.card:hover{
+    cursor: pointer;
+    background: snow;
+    transform: translateY(-10px);
+    transition: 0.12s;
 }
 // BLOQUE 4
 .card{

@@ -80,6 +80,12 @@ nav {
   flex-direction: row;
   margin: auto; }
 
+.card:hover {
+  cursor: pointer;
+  background: snow;
+  transform: translateY(-10px);
+  transition: 0.12s; }
+
 .card__propiedad {
   height: 120px;
   overflow: hidden; }
