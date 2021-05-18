@@ -163,7 +163,7 @@ header a{
 #login,#register{
     display: none;
     position: absolute;
-    top:145px;
+    top:105px;
     width: auto;
     height:125px;
     padding: 35px 5px;

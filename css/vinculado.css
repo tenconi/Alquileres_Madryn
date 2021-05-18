@@ -1,5 +1,5 @@
 /*Variables*/
-/*Consigna clase 11*/
+/**/
 section {
   position: relative; }
 
@@ -111,7 +111,8 @@ nav {
   color: #fc0101;
   padding-left: 40px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .section_tit::before {
   content: url(../img/favicon.png);

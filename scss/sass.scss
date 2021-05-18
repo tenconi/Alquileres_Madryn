@@ -6,7 +6,9 @@ $secundario:#9ec1e4;
 $acento:#ffea00;
 $negro:#333333;
 $link:#ff4500;
-/*Consigna clase 11*/
+
+
+/**/
 section{
     position: relative;
 }
@@ -139,11 +141,12 @@ nav{
     padding-left: 40px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .section_tit::before{
     content:url(../img/favicon.png);
     position: absolute;
-left: 0px;
+    left: 0px;
 }
 /*footer*/
 .social_nav{

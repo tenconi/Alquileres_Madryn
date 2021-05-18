@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-          <meta name="author" content="tenco | Daniel Tenconi">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>3° Pre-Entrega</title>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-		<link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="author" content="tenco | Daniel Tenconi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3° Pre Entrega</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vinculado.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
 <body>
 	<header>
 		<div class="container">
@@ -22,42 +24,42 @@
 
 			<div class="utilidades">
 				<div class="DiaFecha">
-					<div class="fecha">
-						<p>17</p>
-						<p>Marzo</p>
+					<div class="DiaFecha__fecha">
+						<p class="DiaFecha--dia">17</p>
+						<p class="DiaFecha--mes">Marzo</p>
 					</div>
 
-					<div class="clima">
-						<p>22°</p>
-						<p>Madryn</p>
+					<div class="DiaFecha__clima">
+						<p class="DiaFecha--temperatura">22°</p>
+						<p class="DiaFecha--localidad">Madryn</p>
 					</div>
 				</div>
 
 				<div class="acceso">
 					<a href="#login" class="login">Login</a>
 
-					<a href="#register" class="register">Registrarse</a>					
+					<a href="#register" class="register">Registrarse</a>			
 				</div>
 
-				<div id="login"><!-- Flotantes ... aparecen al llamarlas-->
-					<a href="" class="cerrar">X</a>
-					<form action="" method="POST">
-						<input type="text" placeholder="Usuario o Mail">
-						<input type="password" placeholder="contraseña">
-						<input type="button" value="OK">
-					</form>
-				</div>
+						<div id="login"><!-- Flotantes ... aparecen al llamarlas-->
+							<a href="" class="cerrar">X</a>
+							<form action="" method="POST">
+								<input type="text" placeholder="Usuario o Mail">
+								<input type="password" placeholder="contraseña">
+								<input type="button" value="OK">
+							</form>
+						</div>
 
-				<div id="register"><!-- Flotantes ... aparecen al llamarlas-->
-					<a href="" class="cerrar">X</a>
-					<form action="" method="GET">
-						<input type="text" placeholder="Usuario">
-						<input type="email" placeholder="e-mail">
-						<input type="password" placeholder="Contraseña">
-						<input type="button" value="OK">
+						<div id="register"><!-- Flotantes ... aparecen al llamarlas-->
+							<a href="" class="cerrar">X</a>
+							<form action="" method="GET">
+								<input type="text" placeholder="Usuario">
+								<input type="email" placeholder="e-mail">
+								<input type="password" placeholder="Contraseña">
+								<input type="button" value="OK">
 
-					</form>
-				</div>
+							</form>
+						</div>
 			</div>
 
 			<div class="menu_ico">
@@ -71,11 +73,24 @@
 
 	<nav>
 		<ul class="nav_list">
-			<li><a href="alquiler.html">Alquiler</a></li>
-			<li><a href="compra.html">Compra</a></li>
-			<li><a href="publicar.html">Publicar</a></li>
-			<li><a href="nosotros.html">Nosotros</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
+			<li class="nav_list__item">
+				<a href="alquiler.html" class="nav_list--link">Alquiler</a>
+			</li>
+			<li class="nav_list__item">
+				<a href="compra.html" class="nav_list--link">Compra</a>
+			</li>
+
+			<li class="nav_list__item">
+				<a href="publicar.html" class="nav_list--link">Publicar</a>
+			</li>
+
+			<li class="nav_list__item">
+				<a href="nosotros.html" class="nav_list--link">Nosotros</a>
+			</li>
+
+			<li class="nav_list__item">
+				<a href="contacto.html" class="nav_list--link">Contacto</a>
+			</li>
 		</ul>			
 	</nav>
 	
@@ -88,7 +103,8 @@
 		<li><a href="nosotros.html">Nosotros</a></li>
 		<li><a href="contacto.html">Contacto</a></li>
 	</ul>
-	
+
+<!--  ← ↑ Finaliza Header y Nav ↑ → -->	
 	<div class="full_container mb-5">		
 		
 		<div class="container">
