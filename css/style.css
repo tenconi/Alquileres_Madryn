@@ -720,10 +720,9 @@ aside{
 /* footer */
 footer{
     background: var(--negro);    
-    border-top:4px ridge var(--secundario);
 }
 footer > .container{
-    height:200px;
+    height:120px;
     width:95%;
     max-width: 1024px;  
     padding:25px 0 40px;
@@ -732,7 +731,7 @@ footer > .container{
     align-items: center;
 }
 .foot_logo{
-    height: 70px;
+    height: 50px;
     filter: invert(0.5);
 }
 .foot_logo:hover{
@@ -741,8 +740,9 @@ footer > .container{
     transition: 0.12s;
 }
 .foot_list{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     display: flex;
+    flex-direction: column;
     list-style:none;
     padding-top: 10px;
     order:2;
@@ -752,7 +752,7 @@ footer > .container{
 }
 .foot_list a{
     color:var(--secundario);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .foot_list a:hover{
     color:var(--acento);    
@@ -761,7 +761,7 @@ footer > .container{
     width: 50%;
     max-width: 320px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .foot_list, .social_nav{
     display: flex;

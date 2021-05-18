@@ -117,3 +117,14 @@ nav {
   content: url(../img/favicon.png);
   position: absolute;
   left: 0px; }
+
+/*footer*/
+.social_nav i {
+  font-size: 30px;
+  color: #9ec1e4; }
+
+.social_nav i:hover {
+  color: #ffea00; }
+
+.social_nav i:not(last-child) {
+  margin-right: 20px; }

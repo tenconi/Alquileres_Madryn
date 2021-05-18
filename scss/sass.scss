@@ -145,3 +145,19 @@ nav{
     position: absolute;
 left: 0px;
 }
+/*footer*/
+.social_nav{
+    i{
+        font-size: 30px;
+        color:$secundario
+    }
+    i:hover{
+        color:$acento
+    }
+    i:not(last-child){
+        margin-right: 20px;
+    }
+}
+.foot_nav{
+
+}
