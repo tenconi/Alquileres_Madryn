@@ -164,3 +164,32 @@ nav{
 .foot_nav{
 
 }
+
+/*CARD*/
+@media(max-width:768px){
+
+   .card{ 
+       .card__img-top{
+        height: 100px;
+        background-size: cover;
+        
+    }
+    .destacado_info{
+        display: block;
+    }
+    .destacado_info>p{
+        font-size: 1rem;;
+    }
+    h2 > .card--title{
+        font-size: 1.4rem;
+        letter-spacing: -0.3px;
+        margin: 0px 0 12px;
+        padding:0px;
+        min-height: 18px;
+    }
+    .card__body.destacado_info{
+        padding:5px 5px;
+    }
+    }
+
+}
