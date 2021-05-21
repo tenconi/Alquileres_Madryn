@@ -8,8 +8,6 @@
 
     
 
-
-
     
 /* = = = = Navegacion = = = = */
 /*
@@ -72,95 +70,9 @@ nav{
 
 
 /* * * * publicidad * * * */
-aside{
-    width:15%;
-    background: grey;
-}
+
 
 /* footer */
-footer{
-    background: var(--negro);    
-}
-footer > .container{
-    height:120px;
-    width:95%;
-    max-width: 1024px;  
-    padding:25px 0 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.foot_logo{
-    height: 50px;
-    filter: invert(0.5);
-}
-.foot_logo:hover{
-    transform: translate(0px, -2px);
-    filter: invert(0);
-    transition: 0.12s;
-}
-.foot_list{
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    list-style:none;
-    padding-top: 10px;
-    order:2;
-}
-.foot_list ul li{
-    padding:5px 10px;
-}
-.foot_list a{
-    color:var(--secundario);
-    font-size: 1rem;
-}
-.foot_list a:hover{
-    color:var(--acento);    
-}
-.foot_nav{
-    width: 50%;
-    max-width: 320px;
-    display: flex;
-    flex-direction: row;
-}
-.foot_list, .social_nav{
-    display: flex;
-    justify-content: space-around;
-}
-.foot_list{
-    display: flex;
-}
-.social_ico{
-    height: 28px;
-    fill:var(--secundario);
-    order: 1;
-}
-.social_ico:hover{
-    fill: var(--acento);
-    transition: 0.12s;
-    transform: translate(0px, -2px);    
-}
-
-    @media(max-width:768px){
-        footer .container{
-            max-width:760px;
-            width: 90%;
-        }
-        .foot_logo{
-            height: 55px;        
-        }
-        
-    }
-    @media (max-width:576px){ /*consigna Clase 10*/
-        footer > .container{
-            flex-direction: column;
-            width:90%
-        }
-        .foot_nav {
-            width:90%;
-        }
-        
-    }
 /* = = = = = Publicidad = = = = = */
 /* = ↓ ↓ ↓ = Publicidad = ↓ ↓ ↓ = */
 
@@ -201,13 +113,13 @@ footer > .container{
     grid-area: imagen;
     margin: auto;
 }
-.publi_alquiler{/* se lo utiliza para diferenciar y demostrar lo aprendido en clase*/
+.publi_alquiler{
  filter:hue-rotate(90deg)
 }
 .publi_compra{
- filter: sepia(1);/* se lo utiliza para diferenciar y demostrar lo aprendido en clase*/
+ filter: sepia(1);
 }
-@media(max-width:576px){  /*consigna Clase 10*/
+@media(max-width:576px){
     .banner_publicitario{
         display: grid;
         grid-template-columns: 100%;
@@ -224,96 +136,10 @@ footer > .container{
     }
 }
 /* Aside Publicitario */
-aside{
-    display: flex;
-    flex-direction: column;
-    padding:0px
-}
-[class ^= publicidad_]{
-    width: 100%;
-    padding:10px;
-    border-bottom:1px solid silver;
-}
-.publicidad_1{
-    height:60vh;
-    background:url(../img/publi/p1b-rex.jpg) center no-repeat;
-    background-size: cover;
-}    
-.publicidad_2{
-    height:40vh;
-    background:url(../img/publi/p2-retak.jpg) left no-repeat;
-    background-size: cover;
-}
-.publicidad_3{
-    height:30vh;
-    background:url(../img/publi/p3-santander.jpg) center no-repeat;
-    background-size: cover;
-}
-.publicidad_4{
-    height:20vh;
-    height:30vh;
-    background-color: #ffffff;
-    background:url(../img/publi/p4-prestamos.jpg), #ffffff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-}
-    @media(max-width:768px){
-        aside{
-            width: 100%;
-            display: grid;
-            grid-template-areas: 
-            "publi1 publi1 publi1"
-            "publi2 publi3 publi4";
-        }
-        .publicidad_1{
-            grid-area: publi1;
-            height: 150px;
-            background: url(../img/publi/p1-banner-rex-1920.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-        .publicidad_2{
-            grid-area: publi2;
-        }
-        .publicidad_3{
-            grid-area: publi3;
-        }
-        .publicidad_4{
-            grid-area: publi4;
-        }
-        .publicidad_2, .publicidad_3, .publicidad_4{
-            height: 100px;
-        }
-    }
+
 
 /* SUB FOOT AUTOR / Clase*/
-.sub_foot{
-    background: black; 
-    color:white;
-    height: 30px;
-}
-.sub_foot .container{
-    width:95%;
-    max-width: 1200px;   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
-}
-.sub_foot .container p{
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-}
-@media(max-width:768px){}
-@media(max-width:576px){
-    .sub_foot{
-        height:auto;
-    }
-    .sub_foot .container{
-        flex-direction: column;
-        padding: 10px 0;
-    }
-}
+
  /*consigna Clase 10*/
 .carousel{
     display: flex;

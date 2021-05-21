@@ -1,0 +1,66 @@
+/* publicidad  */
+aside{
+    width:15%;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    padding:0px
+}
+[class ^= publicidad_]{
+    width: 100%;
+    padding:10px;
+    border-bottom:1px solid silver;
+}
+.publicidad_1{
+    height:60vh;
+    background:url(../img/publi/p1b-rex.jpg) center no-repeat;
+    background-size: cover;
+}    
+.publicidad_2{
+    height:40vh;
+    background:url(../img/publi/p2-retak.jpg) left no-repeat;
+    background-size: cover;
+}
+.publicidad_3{
+    height:30vh;
+    background:url(../img/publi/p3-santander.jpg) center no-repeat;
+    background-size: cover;
+}
+.publicidad_4{
+    height:20vh;
+    height:30vh;
+    background-color: #ffffff;
+    background:url(../img/publi/p4-prestamos.jpg), #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+    @media(max-width:768px){
+        aside{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            "publi1 publi1 publi1"
+            "publi2 publi3 publi4";
+            .publicidad_1{
+            grid-area: publi1;
+            height: 150px;
+            background: url(../img/publi/p1-banner-rex-1920.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .publicidad_2{
+            grid-area: publi2;
+        }
+        .publicidad_3{
+            grid-area: publi3;
+        }
+        .publicidad_4{
+            grid-area: publi4;
+        }
+        .publicidad_2, .publicidad_3, .publicidad_4{
+            height: 100px;
+        }
+        }
+        
+    }

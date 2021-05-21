@@ -1,3 +1,5 @@
+/* import */
+@import "publicidad";
 /*Variables*/
 $info: bold 20px 'Roboto', sans-serif;
 $detalle: 10px 'Roboto', sans-serif;
@@ -41,24 +43,24 @@ h2{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
+} 
     @media(max-width:768px){
         .full_container{
             flex-direction: column;
         }
     }
-} 
 
 .container{ 
     width: 95%;
     max-width: 1024px;
     height: auto;
-    margin: auto;
+    margin: auto;    
+}
     @media(max-width:768px){
         .container{
             max-width:90%
         }
     }
-}
 .row{
     display: flex;
     flex-direction: row;
@@ -797,17 +799,28 @@ nav{
 
 .social_nav{
     justify-content: space-around;
+    i{
+        font-size: 30px;
+        color:$secundario
+    }
+    i:hover{
+        color:$acento
+    }
+    i:not(last-child){
+        margin-right: 20px;
+    }
+    .social_nav--ico{
+        height: 24px;
+        fill:$secundario;
+    }
+    .social_nav--ico:hover{
+        fill:$acento
+    }
 }
 .social_nav__elemento{
 
 }
-.social_nav--ico{
-    height: 24px;
-    fill:$secundario;
-}
-.social_nav--ico:hover{
-    fill:$acento
-}
+
 .section_tit{
     color:$primario;  
     padding-left: 40px;
@@ -821,19 +834,71 @@ nav{
     left: 0px;
 }
 /*footer*/
-.social_nav{
-    i{
-        font-size: 30px;
-        color:$secundario
+
+footer{
+    background: var(--negro);    
+}
+footer > .container{
+    height:120px;
+    width:95%;
+    max-width: 1024px;  
+    padding:25px 0 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .foot_list, .social_nav{
+        display: flex;
+        justify-content: space-around;
     }
-    i:hover{
-        color:$acento
-    }
-    i:not(last-child){
-        margin-right: 20px;
+    .foot_list{
+        display: flex;
     }
 }
-.foot_nav{
-
+.foot_logo{
+    height: 50px;
+    filter: invert(0.5);
+}
+.foot_logo:hover{
+    transform: translate(0px, -2px);
+    filter: invert(0);
+    transition: 0.12s;
+}
+.foot_list{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    padding-top: 10px;
+    order:2;
+    ul li{
+        padding:5px 10px;
+    }
+    a{
+        color:var(--secundario);
+        font-size: 1rem;
+    }
+    a:hover{
+        color:var(--acento);    
+    }
 }
 
+
+
+
+    @media(max-width:768px){
+        footer .container{
+            max-width:760px;
+            width: 90%;
+        }
+        .foot_logo{
+            height: 55px;        
+        }        
+    }
+    @media (max-width:576px){
+        footer > .container{
+            flex-direction: column;
+            width:90%
+        }
+        
+    }
+    /** ********************** */
