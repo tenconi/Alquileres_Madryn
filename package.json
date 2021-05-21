@@ -1,0 +1,17 @@
+{
+  "name": "tenconi",
+  "version": "1.0.0",
+  "description": "clase 11 sass y bem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/sass.scss css/vinculado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "tenco | Daniel Tenconi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
