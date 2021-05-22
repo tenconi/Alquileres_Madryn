@@ -713,6 +713,10 @@ nav {
 .card--titlesito {
   margin-bottom: 15px; }
 
+.card--textito {
+  font-size: 1.2rem;
+  color: red; }
+
 /*CARD*/
 @media (max-width: 768px) {
   .card .card__img-top {
@@ -813,3 +817,4 @@ footer > .container {
     width: 90%; } }
 
 /** ********************** */
+/*sasa*/
