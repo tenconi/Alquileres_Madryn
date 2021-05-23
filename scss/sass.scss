@@ -561,7 +561,10 @@ main{
 #alquileres .card:hover, #compra .card:hover{
     box-shadow: 0 1.1rem 1rem rgba(0,0,0,0.15);
 }
-
+p.txt-description{
+    font: 1rem;
+    color:green
+}
     @media(max-width:768px){
         .propiedades{
             flex-wrap: wrap;
