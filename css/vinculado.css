@@ -67,6 +67,9 @@ aside {
 html {
   font-size: 62.5%; }
 
+body {
+  background: linear-gradient(180deg, #fffffd 84%, #fafaf0); }
+
 /* GENERALES */
 p {
   font-family: 'Roboto', sans-serif;
@@ -84,6 +87,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   padding: 25px 0 50px; }
+
+.section_tit {
+  color: #fc0101;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.section_tit::before {
+  content: url(../img/favicon.png);
+  position: absolute;
+  left: 0px; }
 
 .full_container {
   width: 100%;
@@ -244,6 +259,25 @@ main {
   .destacado:not(:last-child) {
     margin-bottom: 30px; } }
 
+/* Carrusel */
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 40px 0px 50px; }
+
+.carru_info {
+  color: #ffea00;
+  font-weight: 500;
+  text-shadow: 0px 1px 7px black; }
+
+.carousel-item h5 {
+  color: #333333;
+  font-size: 1.4rem; }
+
+/* fin carrusel */
+.card {
+  padding: 0px; }
+
 /* Alquileres y Compras*/
 .propiedades {
   display: flex;
@@ -347,7 +381,7 @@ p.txt-description {
 /* ↓ ↓ ↓ Contacto ↓ ↓ ↓ */
 .contact_grid {
   display: grid;
-  grid-template-areas: "c_titulo c_titulo" "c_texto c_formulario";
+  grid-template-areas: "c_titulo c_formulario" "c_texto c_formulario";
   grid-template-columns: 30% 70%;
   grid-template-rows: 70px auto;
   column-gap: 15px;
@@ -372,13 +406,13 @@ p.txt-description {
   color: var(--secundario); }
 
 #contact_us input {
-  height: 40px; }
+  height: 30px; }
 
 #contact_us input:focus, #contact_us textarea:focus {
-  box-shadow: inset 0px 0px 7px var(--secundario); }
+  box-shadow: inset 0px 0px 7px #ff4500; }
 
 #contact_us input:not(:last-child), #contact_us textarea {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 10px;
   border-radius: 3px;
   border: 1px solid var(--negro); }
@@ -386,8 +420,8 @@ p.txt-description {
 #contact_us textarea {
   min-width: 100%;
   max-width: 100%;
-  min-height: 150px;
-  max-width: 200px; }
+  min-height: 120px;
+  max-width: 150px; }
 
 #contact_us input, #contact_us textarea {
   outline: none;
@@ -395,15 +429,20 @@ p.txt-description {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
 
 #contact_us input:last-child {
-  background: var(--acento);
+  background: #9ec1e4;
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 25px; }
+  margin-top: 15px;
+  outline: none; }
+
+#contact_us input:last-child:hover {
+  background: #ffea00;
+  color: #333333; }
 
 #contact_us input:last-child:active {
   background: var(--link);
-  color: var(--negro); }
+  color: #ffffff; }
 
 @media (max-width: 425px) {
   .contact_grid {
@@ -493,18 +532,6 @@ p.txt-description {
     min-height: 18px; }
   .card .card__body.destacado_info {
     padding: 5px 5px; } }
-
-.section_tit {
-  color: #fc0101;
-  padding-left: 40px;
-  display: flex;
-  align-items: center;
-  position: relative; }
-
-.section_tit::before {
-  content: url(../img/favicon.png);
-  position: absolute;
-  left: 0px; }
 
 /** ********************** */
 /* ↓ ↓ ↓ ESTO QUEDA ↓ ↓ ↓ */

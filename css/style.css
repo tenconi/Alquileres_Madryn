@@ -6,77 +6,8 @@
     --link:#ff4500;
 }
 
-    
-
-    
-/* = = = = Navegacion = = = = */
-/*
-nav{
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    width: 100%;
-    background:var(--acento);
-}
-.nav_list{
-    position: relative;
-    display: flex;
-    list-style: none;
-    text-align: center; 
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.nav_list li{
-    width:150px;
-    height:30px;
-    background: var(--acento);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav_list li a{
-    color: var(--negro);
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 30px;
-    font-family: 'Roboto',sans-serif;
-    letter-spacing: 0.2rem;
-    word-spacing: normal;
-}
-.nav_list li a:hover{
-    color:var(--primario);
-    border-bottom: 2px solid var(--primario);
-    line-height: 35px;
-    transition: 0.12s;
-}
-.nav_list li ul{
-    display: none;    
-}
-.nav_list li ul>li{
-    background:rgba(255, 204, 0 ,0.8);
-    backdrop-filter:blur(3px);
-}
-.nav_list li:hover>ul{
-    display: block;
-    position: absolute;
-    top:45px;   
-}
-*/
-
-
-
-
-
-/* * * * publicidad * * * */
-
-
-/* footer */
-/* = = = = = Publicidad = = = = = */
-/* = ↓ ↓ ↓ = Publicidad = ↓ ↓ ↓ = */
-
 /* Banner Publicitario */
+
 .banner_publicitario{
     width: 100%;
     height: 200px;
@@ -135,20 +66,14 @@ nav{
         display: none;
     }
 }
+
 /* Aside Publicitario */
 
 
 /* SUB FOOT AUTOR / Clase*/
 
  /*consigna Clase 10*/
-.carousel{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 40px 0px 50px;
-}
-.card{
-    padding:0px
-}
+
 #alquileres .row, #compra .row{
     margin-bottom: 50px;
 }
