@@ -78,6 +78,7 @@ header{
     background: linear-gradient(180deg, var(--secundario), var(--acento));
     display: flex;
     padding-top: 10px;
+    z-index: 3;
 }
 header > .container{
     max-width: 1024px;
@@ -130,6 +131,12 @@ header a{
 main{
     width:70%;
     padding:50px 30px;
+}
+.main__banner{
+width:100%;
+margin-bottom: 40px;
+border-radius: 5px;
+box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.25);
 }
 .destacado{
     width:calc(25% - 15px);
@@ -270,8 +277,7 @@ main{
 }
 /* VER Y ACOMODAR PARA QUE SURTA EFECTO EL TAMAñO*/
 p.txt-description{
-    font: 1rem;
-    color:green
+    font-size: 1.2rem!important;
 }
     @media(max-width:768px){
         .propiedades{
@@ -557,14 +563,15 @@ p.txt-description{
     color:#ffffff;
     font-weight: 600;    
 }
-#login,#register{
+#login, #register{
     display: none;
     position: absolute;
     top:105px;
     width: auto;
-    height:125px;
+    height:137px;
     padding: 35px 5px;
     border-radius: 0 0 5px 5px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
     @media(max-width:768px){
         #login,#register{
@@ -575,6 +582,7 @@ p.txt-description{
 #login form input:not(:last-child),#register form input:not(:last-child){
     height: 20px;
     padding: 3px 5px;
+    margin-bottom: 5px;
 }
 #login form,#register form{
     display: flex;
