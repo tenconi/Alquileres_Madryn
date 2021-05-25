@@ -28,12 +28,12 @@
 			<div class="utilidades">
 				<div class="DiaFecha">
 					<div class="DiaFecha__fecha">
-						<p class="DiaFecha--dia">17</p>
-						<p class="DiaFecha--mes">Marzo</p>
+						<p class="DiaFecha--dia">25</p>
+						<p class="DiaFecha--mes">Diciembre</p>
 					</div>
 
 					<div class="DiaFecha__clima">
-						<p class="DiaFecha--temperatura">22°</p>
+						<p class="DiaFecha--temperatura">12°</p>
 						<p class="DiaFecha--localidad">Madryn</p>
 					</div>
 				</div>
@@ -42,72 +42,76 @@
 					<a href="#login" class="login">Login</a>
 
 					<a href="#register" class="register">Registrarse</a>			
-				</div>
-
-						<div id="login"><!-- Flotantes ... aparecen al llamarlas-->
-							<a href="" class="cerrar">X</a>
-							<form action="" method="POST">
-								<input type="text" placeholder="Usuario o Mail">
-								<input type="password" placeholder="contraseña">
-								<input type="button" value="OK">
-							</form>
-						</div>
-
-						<div id="register"><!-- Flotantes ... aparecen al llamarlas-->
-							<a href="" class="cerrar">X</a>
-							<form action="" method="GET">
-								<input type="text" placeholder="Usuario">
-								<input type="email" placeholder="e-mail">
-								<input type="password" placeholder="Contraseña">
-								<input type="button" value="OK">
-
-							</form>
-						</div>
+				</div>				
 			</div>
 
 			<div class="menu_ico">
 				<a href="#responsive_menu">
-					<img src="img/bars-solid.svg" alt="menu">
+					<i class="fas fa-bars" alt="menu"></i>
 				</a>
 			</div>
-
 		</div>
+
+		<nav>
+			<ul class="nav_list">
+				<li class="nav_list__item">
+					<a href="alquiler.html" class="nav_list--link">Alquiler</a>
+				</li>
+				<li class="nav_list__item">
+					<a href="compra.html" class="nav_list--link activado">Compra</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="publicar.html" class="nav_list--link">Publicar</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="nosotros.html" class="nav_list--link">Nosotros</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="contacto.html" class="nav_list--link">Contacto</a>
+				</li>
+			</ul>			
+		</nav>
 	</header>
 
-	<nav>
-		<ul class="nav_list">
-			<li class="nav_list__item">
-				<a href="alquiler.html" class="nav_list--link">Alquiler</a>
-			</li>
-			<li class="nav_list__item">
-				<a href="compra.html" class="nav_list--link">Compra</a>
-			</li>
+	<!-- Login Flotante-->	
+	<div id="login">
+		<div class="float_tit">
+			<p>Ingresar</p> <a href="" class="cerrar"><i class="fas fa-times-circle" alt="cerrar"></i></a>
+		</div>
+		<form action="" method="POST">
+			<input type="text" placeholder="Usuario o Mail">
+			<input type="password" placeholder="contraseña">
+			<input type="button" value="ENVIAR">
+		</form>
+	</div>
+	<!-- Registro Flotante-->
+	<div id="register">
+		<div class="float_tit">
+			<p>Registrarse</p> <a href="" class="cerrar"><i class="fas fa-times-circle" alt="cerrar"></i></a>
+		</div>
+		<form action="" method="GET">
+			<input type="text" placeholder="Usuario">
+			<input type="email" placeholder="e-mail">
+			<input type="password" placeholder="Contraseña">
+			<input type="button" value="ENVIAR">
 
-			<li class="nav_list__item">
-				<a href="publicar.html" class="nav_list--link">Publicar</a>
-			</li>
+		</form>
+	</div>	
 
-			<li class="nav_list__item">
-				<a href="nosotros.html" class="nav_list--link">Nosotros</a>
-			</li>
-
-			<li class="nav_list__item">
-				<a href="contacto.html" class="nav_list--link">Contacto</a>
-			</li>
-		</ul>			
-	</nav>
-	
-	<ul id="responsive_menu" class="responsive_menu"><!-- Se despliega en 768px-->
-		<li><a href="">X</a></li>
+	<!-- Menu para movil → → → Se despliega en 768px-->
+	<ul id="responsive_menu" class="responsive_menu">
+		<li><a href="" class="cerrar"><i class="fas fa-times-circle" alt="cerrar"></i></li>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="alquiler.html">Alquiler</a></li>
-		<li><a href="compra.html">Compra</a></li>
+		<li><a href="compra.html" class="menu_active">Compra</a></li>
 		<li><a href="publicar.html">Publicar</a></li>
 		<li><a href="nosotros.html">Nosotros</a></li>
 		<li><a href="contacto.html">Contacto</a></li>
 	</ul>
-
-<!--  ← ↑ Finaliza Header y Nav ↑ → -->	
+	<!--  ← ↑ Finaliza Header y Nav ↑ → -->		
 
 
 	<div class="full_container">
