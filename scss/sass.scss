@@ -1,7 +1,7 @@
 /* import */
 @import "header-nav";
 @import "publicidad";
-/*Variables*/
+//
 $info: bold 20px 'Roboto', sans-serif;
 $detalle: 10px 'Roboto', sans-serif;
 $primario:#fc0101;
@@ -33,7 +33,7 @@ a{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Crete Round', serif;
-    color:var(--negro);
+    color:$negro;
     margin:0px;
 }
 h2{
@@ -481,30 +481,17 @@ p.txt-description{
      } 
  }
 
-// BLOQUE 4
 
-
-
-
-
-    /** ********************** */
 /* ↓ ↓ ↓ ESTO QUEDA ↓ ↓ ↓ */
-
-
-
-
-
-
-
-
 
 /* = = = filtrado = = = */
 .filtrado{
     width: 15%;
     padding:20px;
-    background:linear-gradient(var(--secundario), grey);
+    background:linear-gradient(0deg,var(--secundario), silver);
     display: block;
     min-height: 100%;
+    z-index: 0;
 }
 .filtro{
     width:100%;
@@ -523,11 +510,12 @@ p.txt-description{
 .filtro select{
     width:100%;
     outline: none;
-    border:1px solid grey;
+    border:1px solid $secundario;
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    padding:5px;
+    font-size: 1rem;
+    color:grey;
+    padding:3px;
     border-radius: 3px;
 }
     @media(max-width:768px){
