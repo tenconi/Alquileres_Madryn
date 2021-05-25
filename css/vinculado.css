@@ -10,6 +10,7 @@ header {
   header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 0 1rem; }
     header .container .brand {
       height: 70px; }
@@ -56,6 +57,10 @@ header {
     header .container .menu_ico {
       font-size: 20px;
       display: none; }
+      header .container .menu_ico a {
+        color: #ffea00; }
+      header .container .menu_ico a:hover {
+        color: #fc0101; }
   header nav {
     margin: auto;
     background: #ffea00; }
@@ -84,6 +89,83 @@ header {
           border-bottom: solid 1px #fc0101;
           text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
           transition: 0.12s; }
+
+@media (max-width: 768px) {
+  nav {
+    display: none; }
+  header {
+    height: auto; }
+    header .container .brand {
+      height: 50px; }
+    header .container .utilidades {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      width: auto; }
+      header .container .utilidades .DiaFecha .DiaFecha__fecha {
+        margin-right: 10px; }
+      header .container .utilidades .acceso .login, header .container .utilidades .acceso .register {
+        margin: 5px; }
+    header .container .menu_ico {
+      display: flex; } }
+
+@media (max-width: 425px) {
+  header .container .brand {
+    height: 40px; }
+  header .container .utilidades .DiaFecha {
+    display: none; } }
+
+/* Login y Register Flotantes */
+#login, #register {
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  background: #ffea00;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 15%; }
+  #login .float_tit, #register .float_tit {
+    display: flex;
+    justify-content: space-between; }
+    #login .float_tit p, #register .float_tit p {
+      font-family: 'Crete Round', serif;
+      font-size: 1.4rem;
+      color: #333333; }
+    #login .float_tit .cerrar, #register .float_tit .cerrar {
+      font-size: 1.4rem;
+      text-align: right;
+      color: #ff4500; }
+      #login .float_tit .cerrar :hover, #register .float_tit .cerrar :hover {
+        color: #9ec1e4; }
+      #login .float_tit .cerrar :active, #register .float_tit .cerrar :active {
+        color: #fc0101; }
+  #login form, #register form {
+    display: inline-flex;
+    flex-direction: column; }
+    #login form input, #register form input {
+      outline: none;
+      height: 2rem; }
+    #login form input:not(last-child), #register form input:not(last-child) {
+      margin-bottom: 0.7rem;
+      padding: 0.5rem; }
+    #login form input:last-child, #register form input:last-child {
+      padding: 0px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      letter-spacing: 0.2rem; }
+
+#login:target, #register:target {
+  display: flex; }
+
+@media (max-width: 768px) {
+  #login, #register {
+    right: 0;
+    left: 0;
+    margin: auto; } }
 
 /* publicidad  */
 aside {
