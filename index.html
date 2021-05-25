@@ -28,12 +28,12 @@
 			<div class="utilidades">
 				<div class="DiaFecha">
 					<div class="DiaFecha__fecha">
-						<p class="DiaFecha--dia">17</p>
-						<p class="DiaFecha--mes">Marzo</p>
+						<p class="DiaFecha--dia">25</p>
+						<p class="DiaFecha--mes">Diciembre</p>
 					</div>
 
 					<div class="DiaFecha__clima">
-						<p class="DiaFecha--temperatura">22°</p>
+						<p class="DiaFecha--temperatura">12°</p>
 						<p class="DiaFecha--localidad">Madryn</p>
 					</div>
 				</div>
@@ -42,59 +42,61 @@
 					<a href="#login" class="login">Login</a>
 
 					<a href="#register" class="register">Registrarse</a>			
-				</div>
-
-						<div id="login"><!-- Flotantes ... aparecen al llamarlas-->
-							<a href="" class="cerrar">X</a>
-							<form action="" method="POST">
-								<input type="text" placeholder="Usuario o Mail">
-								<input type="password" placeholder="contraseña">
-								<input type="button" value="OK">
-							</form>
-						</div>
-
-						<div id="register"><!-- Flotantes ... aparecen al llamarlas-->
-							<a href="" class="cerrar">X</a>
-							<form action="" method="GET">
-								<input type="text" placeholder="Usuario">
-								<input type="email" placeholder="e-mail">
-								<input type="password" placeholder="Contraseña">
-								<input type="button" value="OK">
-
-							</form>
-						</div>
+				</div>				
 			</div>
 
 			<div class="menu_ico">
 				<a href="#responsive_menu">
-					<img src="img/bars-solid.svg" alt="menu">
+					<i class="fas fa-bars"></i>
 				</a>
 			</div>
 		</div>
+
+		<nav>
+			<ul class="nav_list">
+				<li class="nav_list__item">
+					<a href="alquiler.html" class="nav_list--link">Alquiler</a>
+				</li>
+				<li class="nav_list__item">
+					<a href="compra.html" class="nav_list--link">Compra</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="publicar.html" class="nav_list--link">Publicar</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="nosotros.html" class="nav_list--link">Nosotros</a>
+				</li>
+	
+				<li class="nav_list__item">
+					<a href="contacto.html" class="nav_list--link">Contacto</a>
+				</li>
+			</ul>			
+		</nav>
 	</header>
+	
+	<!-- Login Flotante-->	
+	<div id="login">
+		<a href="" class="cerrar"><i class="fas fa-times-circle"></i></a>
+		<form action="" method="POST">
+			<input type="text" placeholder="Usuario o Mail">
+			<input type="password" placeholder="contraseña">
+			<input type="button" value="OK">
+		</form>
+	</div>
 
-	<nav>
-		<ul class="nav_list">
-			<li class="nav_list__item">
-				<a href="alquiler.html" class="nav_list--link">Alquiler</a>
-			</li>
-			<li class="nav_list__item">
-				<a href="compra.html" class="nav_list--link">Compra</a>
-			</li>
+	<!-- Registro Flotante-->
+	<div id="register">
+		<a href="" class="cerrar"><i class="fas fa-times-circle"></i></a>
+		<form action="" method="GET">
+			<input type="text" placeholder="Usuario">
+			<input type="email" placeholder="e-mail">
+			<input type="password" placeholder="Contraseña">
+			<input type="button" value="OK">
 
-			<li class="nav_list__item">
-				<a href="publicar.html" class="nav_list--link">Publicar</a>
-			</li>
-
-			<li class="nav_list__item">
-				<a href="nosotros.html" class="nav_list--link">Nosotros</a>
-			</li>
-
-			<li class="nav_list__item">
-				<a href="contacto.html" class="nav_list--link">Contacto</a>
-			</li>
-		</ul>			
-	</nav>
+		</form>
+	</div>	
 
 	<!-- Menu para movil → → → Se despliega en 768px-->
 	<ul id="responsive_menu" class="responsive_menu">

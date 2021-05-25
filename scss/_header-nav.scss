@@ -1,0 +1,114 @@
+/*Variables*/
+$info: bold 20px 'Roboto', sans-serif;
+$detalle: 10px 'Roboto', sans-serif;
+$primario:#fc0101;
+$secundario:#9ec1e4;
+$acento:#ffea00;
+$negro:#333333;
+$link:#ff4500;
+/* Reset */ 
+header{
+    width: 100%;
+    background: $secundario;
+    height: 115px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding:0.5rem 0 1rem;
+        .brand{
+            height: 70px;
+        }
+        .utilidades{
+            width: 12%;
+           
+            .DiaFecha{
+                display: flex;
+                justify-content: space-between;
+                .DiaFecha__fecha{
+                    width: 50%;
+                    .DiaFecha--dia{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin-bottom: 0px;
+                        text-align: center;
+                    }
+                    .DiaFecha--mes{
+                        font-size: 1rem;
+                        margin-bottom: 0px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+                .DiaFecha__clima{
+                    width: 50%;
+                    .DiaFecha--temperatura{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin-bottom: 0px;
+                        text-align: center;
+                    }
+                    .DiaFecha--localidad{
+                        font-size: 1rem;
+                        margin-bottom: 0px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .acceso{
+                display: flex;
+                justify-content: space-around;
+                .login, .register{
+                    padding: 0.3rem 0.5rem;
+                    background: $acento;
+                    border-radius: 8rem;
+                }
+                .login:hover, .register:hover{
+                    background: $link;
+                    color:$acento;
+                    transition: .12s;
+                }                
+            }
+        }
+        .menu_ico{
+            font-size: 20px;
+            display: none;
+        }
+    }
+
+    nav{
+        margin: auto;
+        background: $acento;
+        .nav_list{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            .nav_list__item{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .nav_list--link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                .nav_list--link:hover{
+                    color:$primario;
+                    font-weight: 600;
+                    border-bottom:solid 1px $primario;
+                    text-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.15);
+                    transition: 0.12s;
+                }
+            }
+            
+        }
+    }
+}
