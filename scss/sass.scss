@@ -50,6 +50,7 @@ h2{
     position: relative;
     background:linear-gradient(45deg,$acento,80%,gold);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0,0.15);
+    z-index: -2;
 }
 .section_tit::before{
     content:url(../img/favicon.png);
