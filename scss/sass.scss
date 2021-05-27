@@ -218,6 +218,8 @@ box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.25);
     width:calc(20% - 10px);
     margin-bottom: 25px;
     box-shadow: 0px 0.1rem 0.75rem rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;/*
     .porta_propiedad{
         width: calc(20% - 10px);
         height: auto;
@@ -253,7 +255,7 @@ box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.25);
     .prop_info>p{
         font-size: 1.2rem;
         color:var(--negro);
-    }
+    }*/
 }
 #alquileres .card:hover, #compra .card:hover{
     box-shadow: 0 1.1rem 1rem rgba(0,0,0,0.15);
@@ -443,7 +445,7 @@ p.localidad{
     font-size: 1rem;
     font-style: italic;
     color:grey;
-    margin-bottom: 0;    
+    margin-bottom: 0.1rem;    
 }
 .card--title{
     margin:0 0 25px;
@@ -473,7 +475,8 @@ p.localidad{
 
 }
 .card--titlesito{
-    margin-bottom:15px
+    min-height:4.2rem;
+    margin-bottom:15px;
 }
 .card--textito{
     font-size: 1.2rem;
