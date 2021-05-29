@@ -1,0 +1,69 @@
+$info: bold 20px 'Roboto', sans-serif;
+$detalle: 10px 'Roboto', sans-serif;
+$primario:#fc0101;
+$secundario:#9ec1e4;
+$acento:#ffea00;
+$negro:#333333;
+$link:#ff4500;
+/* = = = filtrado = = = */
+.filtrado{
+    width: 15%;
+    padding:20px;
+    background:linear-gradient(180deg,$secundario, silver);
+    display: block;
+    min-height: 100%;
+    z-index: 0;
+}
+.filtro{
+    width:100%;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    padding-top: 30px;
+}
+.filtrado_tit{
+    font-family: 'Crete Round', serif;
+    font-size: 2rem;
+    color:var(--negro);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.filtro select{
+    width:100%;
+    outline: none;
+    border:1px solid $secundario;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color:grey;
+    padding:3px;
+    border-radius: 3px;
+}
+    @media(max-width:768px){
+        .filtrado{            
+            width: 100%;
+            height: auto;
+            padding:0;
+            display: flex;
+            align-items: center;
+        }
+        .filtrado form{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding:0;
+        }
+        .filtrado select{
+            width:calc(20% - 10px);
+            height: 2rem;
+            font-size: 0.8rem;
+            margin:0px
+        }
+        .filtrado_tit{
+            display: none;
+        }
+        .filtrado{
+            padding:5px;
+        }
+    }

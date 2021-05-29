@@ -1,5 +1,6 @@
 /* import */
 @import "header-nav";
+@import "filtrado";
 @import "publicidad";
 //
 $info: bold 20px 'Roboto', sans-serif;
@@ -469,60 +470,6 @@ p.localidad{
  }
 
 
-/* = = = filtrado = = = */
-.filtrado{
-    width: 15%;
-    padding:20px;
-    background:linear-gradient(0deg,var(--secundario), silver);
-    display: block;
-    min-height: 100%;
-    z-index: 0;
-}
-.filtro{
-    width:100%;
-    margin: auto;
-    display:flex;
-    flex-direction:column;
-    padding-top: 30px;
-}
-.filtrado_tit{
-    font-family: 'Crete Round', serif;
-    font-size: 2rem;
-    color:var(--negro);
-    margin-bottom: 20px;
-    text-align: center;
-}
-.filtro select{
-    width:100%;
-    outline: none;
-    border:1px solid $secundario;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color:grey;
-    padding:3px;
-    border-radius: 3px;
-}
-    @media(max-width:768px){
-        .filtrado{            
-            width: 100%;
-        }
-        .filtrado form{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-        .filtrado select{
-            width:calc(20% - 10px)
-        }
-        .filtrado_tit{
-            display: none;
-        }
-        .filtrado{
-            padding:5px;
-        }
-    }
 
 /*footer*/
 footer{

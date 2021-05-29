@@ -227,5 +227,35 @@ aside{
                 }
         }
     }
-
+    @media (max-width:426px){
+        aside{
+            .publicidad_1{}
+            .publicidad_2{}
+            .publicidad_3{
+                display: flex;
+                    flex-direction: column;
+                .info-santander{ 
+                    width:80%;                   
+                    p:first-child{
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+                    p:last-child{
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .publicidad_4{
+                padding: 0 0 0 0rem;
+                img{
+                    height: auto;
+                    width: 70%;
+                }
+                .publi-foot{
+                    display: none;
+                }
+            }
+        }
+    }
     

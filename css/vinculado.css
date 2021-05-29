@@ -118,7 +118,7 @@ header {
     header .container .menu_ico {
       display: flex; } }
 
-@media (max-width: 425px) {
+@media (max-width: 526px) {
   header .container .brand {
     height: 40px; }
   header .container .utilidades .DiaFecha {
@@ -244,6 +244,63 @@ header {
 
 #responsive_menu:target {
   display: flex; }
+
+/* = = = filtrado = = = */
+.filtrado {
+  width: 15%;
+  padding: 20px;
+  background: linear-gradient(180deg, #9ec1e4, silver);
+  display: block;
+  min-height: 100%;
+  z-index: 0; }
+
+.filtro {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px; }
+
+.filtrado_tit {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  color: var(--negro);
+  margin-bottom: 20px;
+  text-align: center; }
+
+.filtro select {
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ec1e4;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: grey;
+  padding: 3px;
+  border-radius: 3px; }
+
+@media (max-width: 768px) {
+  .filtrado {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    align-items: center; }
+  .filtrado form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0; }
+  .filtrado select {
+    width: calc(20% - 10px);
+    height: 2rem;
+    font-size: 0.8rem;
+    margin: 0px; }
+  .filtrado_tit {
+    display: none; }
+  .filtrado {
+    padding: 5px; } }
 
 /* publicidad  */
 aside {
@@ -433,6 +490,26 @@ aside {
           height: 70%; }
     aside .publicidad_2, aside .publicidad_3, aside .publicidad_4 {
       height: 100px; } }
+
+@media (max-width: 426px) {
+  aside .publicidad_3 {
+    display: flex;
+    flex-direction: column; }
+    aside .publicidad_3 .info-santander {
+      width: 80%; }
+      aside .publicidad_3 .info-santander p:first-child {
+        font-size: 1rem;
+        margin-bottom: 0; }
+      aside .publicidad_3 .info-santander p:last-child {
+        font-size: 1rem;
+        margin-bottom: 0; }
+  aside .publicidad_4 {
+    padding: 0 0 0 0rem; }
+    aside .publicidad_4 img {
+      height: auto;
+      width: 70%; }
+    aside .publicidad_4 .publi-foot {
+      display: none; } }
 
 /* Reset */
 * {
@@ -836,55 +913,6 @@ p.localidad {
     min-height: 18px; }
   .card .card__body.destacado_info {
     padding: 5px 5px; } }
-
-/* = = = filtrado = = = */
-.filtrado {
-  width: 15%;
-  padding: 20px;
-  background: linear-gradient(0deg, var(--secundario), silver);
-  display: block;
-  min-height: 100%;
-  z-index: 0; }
-
-.filtro {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px; }
-
-.filtrado_tit {
-  font-family: 'Crete Round', serif;
-  font-size: 2rem;
-  color: var(--negro);
-  margin-bottom: 20px;
-  text-align: center; }
-
-.filtro select {
-  width: 100%;
-  outline: none;
-  border: 1px solid #9ec1e4;
-  margin-bottom: 15px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: grey;
-  padding: 3px;
-  border-radius: 3px; }
-
-@media (max-width: 768px) {
-  .filtrado {
-    width: 100%; }
-  .filtrado form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between; }
-  .filtrado select {
-    width: calc(20% - 10px); }
-  .filtrado_tit {
-    display: none; }
-  .filtrado {
-    padding: 5px; } }
 
 /*footer*/
 footer {
