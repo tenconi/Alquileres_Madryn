@@ -706,6 +706,83 @@ main {
 #alquileres .row, #compra .row {
   margin-bottom: 50px; }
 
+.card__img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+  .card__img img {
+    width: 100%; }
+
+.card__body {
+  display: flex;
+  flex-direction: column; }
+
+p.localidad {
+  font-size: 1rem;
+  font-style: italic;
+  color: grey;
+  margin-bottom: 0.1rem; }
+
+.card--title {
+  margin: 0 0 25px;
+  padding: 0px; }
+
+.card--btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto; }
+
+.card:hover {
+  cursor: pointer;
+  background: snow;
+  transform: translateY(-10px);
+  transition: 0.12s;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
+
+.card__propiedad {
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
+
+.card--titlesito {
+  min-height: 4.2rem;
+  margin-bottom: 15px; }
+
+.card--textito {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #333333; }
+
+@media (max-width: 768px) {
+  .card .card__img {
+    height: 75px; }
+  .card .destacado_info {
+    display: block; }
+  .card .card__body.destacado_info {
+    padding: 5px 5px; }
+    .card .card__body.destacado_info .localidad {
+      font-size: 0.9rem; }
+    .card .card__body.destacado_info p {
+      font-size: 1rem; }
+    .card .card__body.destacado_info .card--title {
+      font-size: 1.4rem;
+      letter-spacing: -0.3px;
+      margin: 0px 0 12px;
+      padding: 0px;
+      min-height: 18px; }
+  .card .localidad {
+    font-size: 0.9rem; }
+  .card .card--titlesito {
+    font-size: 1.2rem;
+    min-height: 30px; }
+  .card .card--textito {
+    font-size: 1rem; } }
+
 /* VER Y ACOMODAR PARA QUE SURTA EFECTO EL TAMAñO*/
 p.txt-description {
   font-size: 1.2rem !important; }
@@ -721,7 +798,6 @@ p.txt-description {
     height: 100px; } }
 
 @media (max-width: 576px) {
-  /*consigna Clase 10*/
   .porta_propiedad {
     width: calc(50% - 10px); }
   #alquileres .row, #compra .row {
@@ -841,78 +917,6 @@ p.txt-description {
 /* = = = Nosotros = = = */
 .main_nosotros {
   margin: auto; }
-
-/*
-
-*/
-.card__img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  display: flex;
-  align-items: center;
-  overflow: hidden; }
-  .card__img img {
-    width: 100%; }
-
-.card__body {
-  display: flex;
-  flex-direction: column; }
-
-p.localidad {
-  font-size: 1rem;
-  font-style: italic;
-  color: grey;
-  margin-bottom: 0.1rem; }
-
-.card--title {
-  margin: 0 0 25px;
-  padding: 0px; }
-
-.card--btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: auto; }
-
-.card:hover {
-  cursor: pointer;
-  background: snow;
-  transform: translateY(-10px);
-  transition: 0.12s;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
-
-.card__propiedad {
-  height: 120px;
-  overflow: hidden;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
-
-.card--titlesito {
-  min-height: 4.2rem;
-  margin-bottom: 15px; }
-
-.card--textito {
-  font-size: 1.2rem;
-  line-height: 1.3;
-  color: #333333; }
-
-@media (max-width: 768px) {
-  .card .card__img-top {
-    height: 100px;
-    background-size: cover; }
-  .card .destacado_info {
-    display: block; }
-  .card .destacado_info > p {
-    font-size: 1rem; }
-  .card h2 > .card--title {
-    font-size: 1.4rem;
-    letter-spacing: -0.3px;
-    margin: 0px 0 12px;
-    padding: 0px;
-    min-height: 18px; }
-  .card .card__body.destacado_info {
-    padding: 5px 5px; } }
 
 /*footer*/
 footer {
