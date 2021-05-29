@@ -4,7 +4,8 @@ aside{
     background:linear-gradient(180deg,lightgrey,$secundario);
     display: flex;
     flex-direction: column;
-    padding:0px
+    padding:0px;
+    z-index: 0;
 }
 [class ^= publicidad_]{
     width: 100%;
@@ -59,7 +60,8 @@ aside{
         color:#ee7f00;
         display: flex;
         flex-direction: column;
-        align-items: center;       
+        align-items: center;
+        text-shadow: 0 3px 3px rgba(0,0,0,0.25);    
         i{
             font-size: 2.4rem;
         }
@@ -142,25 +144,88 @@ aside{
             grid-template-areas: 
             "publi1 publi1 publi1"
             "publi2 publi3 publi4";
-            .publicidad_1{
-            grid-area: publi1;
-            height: 150px;
-            background: url(../img/publi/p1-banner-rex-1920.jpg);
-            background-size: cover;
-            background-position: center;
+            grid-template-columns: repeat(3,1fr);
+                .publicidad_1{
+                grid-area: publi1;
+                height: 150px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                    img{
+                        height: 90%;
+                        width: auto;
+                        margin: 0px;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        p{
+                            font-size: 1.4rem;
+                        }
+                    }
+                   
+                }
+                .publicidad_2{
+                    grid-area: publi2;
+                    position: relative;
+                    display: flex;
+                    img{
+                        position:absolute;
+                        top:0px;
+                        left:0;
+                    }
+                    .visit-retax{
+                        position: absolute;
+                        right: 1rem;
+                        bottom:0;
+                    }                   
+                }
+                .publicidad_3{
+                    grid-area: publi3;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    img{
+                        height: auto;
+                        width: calc(50% - 1rem);
+                        margin:0px;
+                        align-self:flex-start;
+                    }
+                    .info-santander{
+                        width: calc(50% - 1rem);
+                    }
+                }
+                .publicidad_4{
+                    grid-area: publi4;
+                    flex-direction: row;
+                    padding: 0 0 0 1rem;
+                    img{
+                        height: auto;
+                        width: calc(50% - 1rem);
+                    }
+                    .publi-foot{
+                        width: calc(50% - 1rem);
+                        height: 100%;
+                        p{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        p:first-child{
+                            height: 30%;
+                        }
+                        p:last-child{
+                            height: 70%;
+                        }
+                    }
+                    
+                }
+                .publicidad_2, .publicidad_3, .publicidad_4{
+                    height: 100px;
+                }
         }
-        .publicidad_2{
-            grid-area: publi2;
-        }
-        .publicidad_3{
-            grid-area: publi3;
-        }
-        .publicidad_4{
-            grid-area: publi4;
-        }
-        .publicidad_2, .publicidad_3, .publicidad_4{
-            height: 100px;
-        }
-        }
-        
     }
+
+    

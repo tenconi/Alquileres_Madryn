@@ -5,7 +5,8 @@ header {
   width: 100%;
   background: #9ec1e4;
   height: 115px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1; }
   header .container {
     display: flex;
     justify-content: space-between;
@@ -250,7 +251,8 @@ aside {
   background: linear-gradient(180deg, lightgrey, #9ec1e4);
   display: flex;
   flex-direction: column;
-  padding: 0px; }
+  padding: 0px;
+  z-index: 0; }
 
 [class^=publicidad_] {
   width: 100%;
@@ -299,7 +301,8 @@ aside {
     color: #ee7f00;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25); }
     .publicidad_2 .visit-retax i {
       font-size: 2.4rem; }
     .publicidad_2 .visit-retax p {
@@ -367,19 +370,67 @@ aside {
   aside {
     width: 100%;
     display: grid;
-    grid-template-areas: "publi1 publi1 publi1" "publi2 publi3 publi4"; }
+    grid-template-areas: "publi1 publi1 publi1" "publi2 publi3 publi4";
+    grid-template-columns: repeat(3, 1fr); }
     aside .publicidad_1 {
       grid-area: publi1;
       height: 150px;
-      background: url(../img/publi/p1-banner-rex-1920.jpg);
-      background-size: cover;
-      background-position: center; }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      aside .publicidad_1 img {
+        height: 90%;
+        width: auto;
+        margin: 0px; }
+      aside .publicidad_1 div {
+        display: flex;
+        flex-direction: column; }
+        aside .publicidad_1 div p {
+          font-size: 1.4rem; }
     aside .publicidad_2 {
-      grid-area: publi2; }
+      grid-area: publi2;
+      position: relative;
+      display: flex; }
+      aside .publicidad_2 img {
+        position: absolute;
+        top: 0px;
+        left: 0; }
+      aside .publicidad_2 .visit-retax {
+        position: absolute;
+        right: 1rem;
+        bottom: 0; }
     aside .publicidad_3 {
-      grid-area: publi3; }
+      grid-area: publi3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      aside .publicidad_3 img {
+        height: auto;
+        width: calc(50% - 1rem);
+        margin: 0px;
+        align-self: flex-start; }
+      aside .publicidad_3 .info-santander {
+        width: calc(50% - 1rem); }
     aside .publicidad_4 {
-      grid-area: publi4; }
+      grid-area: publi4;
+      flex-direction: row;
+      padding: 0 0 0 1rem; }
+      aside .publicidad_4 img {
+        height: auto;
+        width: calc(50% - 1rem); }
+      aside .publicidad_4 .publi-foot {
+        width: calc(50% - 1rem);
+        height: 100%; }
+        aside .publicidad_4 .publi-foot p {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        aside .publicidad_4 .publi-foot p:first-child {
+          height: 30%; }
+        aside .publicidad_4 .publi-foot p:last-child {
+          height: 70%; }
     aside .publicidad_2, aside .publicidad_3, aside .publicidad_4 {
       height: 100px; } }
 
