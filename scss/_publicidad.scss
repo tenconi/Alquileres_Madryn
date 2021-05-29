@@ -1,7 +1,7 @@
 /* publicidad  */
 aside{
     width:15%;
-    background: grey;
+    background:linear-gradient(180deg,lightgrey,$secundario);
     display: flex;
     flex-direction: column;
     padding:0px
@@ -13,27 +13,127 @@ aside{
 }
 .publicidad_1{
     height:60vh;
-    background:url(../img/publi/p1b-rex.jpg) center no-repeat;
-    background-size: cover;
+    background:linear-gradient(180deg,#6f05c1,80%,#3d1b5c);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    img{
+        width:50%;
+        margin: auto;
+    }
+    p{
+        font-size: 1vw;
+        line-height: 1;
+        color:#ffffff;
+        text-align: center;
+    }
+    .desc-rex{
+        display: inline-flex;
+        padding:1.4vw;
+        border-radius: 0.5rem;
+        background: gold;
+        margin-bottom: 1.5rem;
+        p{
+            color:#ffffff;
+            font-size: 2rem;
+            font-weight: 600;
+            text-shadow: 0.1rem 0.2rem 0.7rem rgba(0,0,0,0.25);
+            margin-bottom: 0rem;
+        }
+        
+    }
 }    
 .publicidad_2{
     height:40vh;
-    background:url(../img/publi/p2-retak.jpg) left no-repeat;
+    background:url(../img/publi/publi2-retak/ladrillo.jpg);
     background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        height: 3rem;
+        align-self: flex-start;
+    }
+    .visit-retax{
+        color:#ee7f00;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        i{
+            font-size: 2.4rem;
+        }
+        p{
+            font-size: 1vw;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
 }
 .publicidad_3{
     height:30vh;
-    background:url(../img/publi/p3-santander.jpg) center no-repeat;
+    background:linear-gradient(360deg,red 50%, #eeeeee 50%);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width:75%;
+        margin: auto;
+    }
+    .info-santander{
+        width:100%;
+        text-align: center;
+        background:#ffffff;
+        border: 0.1rem solid lightgrey;
+        border-radius: 0.7rem;
+        box-shadow: 0 0.5rem  0.7rem rgba(0,0,0,0.25);
+        padding:0.5rem;
+        p:first-child{
+            font-size: 1.2vw;
+            color:red;
+            font-weight: 600;
+        }
+        p:last-child{
+            font-size: 1vw;
+            color:#000000;
+        }
+    }
 }
 .publicidad_4{
     height:20vh;
     height:30vh;
-    background-color: #ffffff;
-    background:url(../img/publi/p4-prestamos.jpg), #ffffff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0 0;
+    img{
+        width: 70%;
+        margin: auto;
+    }
+    .publi-foot{
+        p:first-child{
+            color:#ffffff;
+            background:lightslategray;
+            font-size: 0.8vw;
+            text-align: center;
+            padding: 0.5rem 0;
+            margin: 0px;
+            font-weight: 600;
+        }
+        p:last-child{
+            background:#edccc7;
+            color:#333;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            padding: 0.5rem 0;
+            margin: 0px;
+        }
+    }
 }
     @media(max-width:768px){
         aside{

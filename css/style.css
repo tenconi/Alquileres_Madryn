@@ -6,7 +6,7 @@
     --link:#ff4500;
 }
 
-/* Banner Publicitario */
+/* Banner Publicitario en Comra y Alquileres */
 
 .banner_publicitario{
     width: 100%;
@@ -67,18 +67,8 @@
     }
 }
 
-/* Aside Publicitario */
 
 
-/* SUB FOOT AUTOR / Clase*/
 
- /*consigna Clase 10*/
 
-#alquileres .row, #compra .row{
-    margin-bottom: 50px;
-}
-.img_prop{
-    width: 100%;
-    height: auto;
-}
 

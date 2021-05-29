@@ -219,46 +219,11 @@ box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.25);
     margin-bottom: 25px;
     box-shadow: 0px 0.1rem 0.75rem rgba(0,0,0,0.15);
     border-radius: 0.5rem;
-    overflow: hidden;/*
-    .porta_propiedad{
-        width: calc(20% - 10px);
-        height: auto;
-        border:1px solid #c6c6c6;
-        border-radius: 3px;
-        margin-bottom: 25px;
-        cursor: pointer;
-        box-shadow: 0px 7px 12px rgba(0,0,0,0.2);
-    }
-    .porta_propiedad:hover{
-        transform: translate(0px, -3px);
-        box-shadow: 0px 10px 12px rgba(0,0,0,0.2);
-        transition: 0.12s;
-    }
-    .img_propiedad{
-        width: 100%;
-        height: 150px;
-        display: flex;
-        overflow: hidden;
-    }
-    .img_propiedad > img{
-        object-fit: cover;
-        min-width: 100%;
-        min-height: 100%;
-    }
-    .prop_info{
-        padding:10px 10px 20px;
-        height: 100px;
-    }
-    .prop_info > h3{
-        margin-bottom: 15px;
-    }
-    .prop_info>p{
-        font-size: 1.2rem;
-        color:var(--negro);
-    }*/
+    overflow: hidden;
+    
 }
-#alquileres .card:hover, #compra .card:hover{
-    box-shadow: 0 1.1rem 1rem rgba(0,0,0,0.15);
+#alquileres .row, #compra .row{
+    margin-bottom: 50px;
 }
 /* VER Y ACOMODAR PARA QUE SURTA EFECTO EL TAMAñO*/
 p.txt-description{
@@ -465,14 +430,10 @@ p.localidad{
     transition: 0.12s;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0,0.15);
 }
-
 .card__propiedad{
     height: 120px;
     overflow: hidden;
     box-shadow: 0 0 1rem rgba(0, 0, 0,0.15);
-}
-.destacado__info{
-
 }
 .card--titlesito{
     min-height:4.2rem;
@@ -510,8 +471,6 @@ p.localidad{
      } 
  }
 
-
-/* ↓ ↓ ↓ ESTO QUEDA ↓ ↓ ↓ */
 
 /* = = = filtrado = = = */
 .filtrado{
@@ -597,8 +556,6 @@ footer{
         }
     }    
 }
-
-
 .foot_list{
     font-size: 1.2rem;
     display: flex;
