@@ -36,9 +36,6 @@ h1,h2,h3,h4,h5,h6{
     color:$negro;
     margin:0px;
 }
-h2{
-    
-}
 .section_tit{
     padding: 10px;
     margin: 0 0 35px;
@@ -596,18 +593,44 @@ footer{
 }
 
     @media(max-width:768px){
-        footer .container{
-            max-width:760px;
-            width: 90%;
-        }
-        .foot_logo{
-            height: 55px;        
-        }        
+        footer {
+            .container{
+                max-width:760px;
+                width: 90%;
+                .foot_logo{
+                    height: 4rem;        
+                }  
+            }
+            
+        }      
     }
     @media (max-width:576px){
-        footer > .container{
-            flex-direction: column;
-            width:90%
+        footer{
+            height: auto;
+            .container{
+                flex-direction: column;
+                width:90%;
+                height: auto;
+                a:first-child{
+                    margin-bottom: 1.8rem;
+                    img{
+                        height: 4rem;
+                    }
+                }
+                .social_nav{
+                    i{
+                      margin:0px 1.5rem;
+                      font-size: 2rem
+                    }
+                }
+                .foot_list{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 90%;
+                    padding:0;
+                }
+            }
         }
         
     }
