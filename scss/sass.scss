@@ -394,7 +394,7 @@ p.txt-description{
 .contact_grid{
     display: grid;
     grid-template-areas:
-    "c_titulo c_formulario"
+    "c_titulo c_titulo"
     "c_texto c_formulario";
     grid-template-columns: 30% 70%;
     grid-template-rows: 70px auto;
@@ -458,7 +458,7 @@ p.txt-description{
     background: var(--link);
     color:#ffffff;
 }
-    @media (max-width:425px){
+    @media (max-width:600px){
         .contact_grid{
             grid-template-areas:
             "c_titulo"
@@ -477,8 +477,6 @@ p.txt-description{
 .main_nosotros{
     margin: auto;
 }
-
-
 
 /*footer*/
 footer{
