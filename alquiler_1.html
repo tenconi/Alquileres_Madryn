@@ -110,98 +110,133 @@
 	</ul>
 	<!--  ← ↑ Finaliza Header y Nav ↑ → -->
 
-	<div class="full_container mb-5">		
-		
-		<div class="container">
-			<div class="row">
-				<div class="container">
-					<h2 class="section_tit">Alquiler 1</h2>
-				</div>
-			</div>
+	<div class="full_container">			
+		<main class="main_transaccion"><!-- Estructura principal-->
+			<h2 class="section_tit">Casa Quinta en Solanas</h2>
+			
+			<div class="prop_selected">
 
-			<div class="row">				
-				<div class="col-md-7 col-sm-12">
-					<img src="img/thumb-2.jpg" class="img-fluid img_prop" alt="propiedad">
-				</div>
-
-				<div class="col-md-5 col-sm-12">
-					<h2><i class="bi bi-tag-fill"></i> Propiedad para Alquilar</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, quam. Impedit consequuntur fuga dolores natus obcaecati aspernatur inventore maxime quod dolorum veniam quidem a, illo, enim nam placeat iusto omnis.</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						<i class="bi bi-cash" style="font-size: 1.6rem;"></i> Alquilar
-					</button>
-					
-					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">¿Desea Alquilar?</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-
-								<div class="modal-body">
-								Al Aceptar automáticamente se le solicitaran sus datos
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-success">Alquilar</button>
-								</div>
-							</div>
+				<div id="carouselExampleIndicators" class="carousel slide muestrario" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/quinta_solanas/thumb-(1).jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/quinta_solanas/thumb-(2).jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/quinta_solanas/thumb-(3).jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/quinta_solanas/thumb-(4).jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/quinta_solanas/thumb-(5).jpg" class="d-block w-100" alt="...">
 						</div>
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
 				</div>
-			</div>
-		</div>		
+
+				<div class="detalles_selected">
+					<h3>Detalles</h3>
+					<p><i class="bi bi-tag-fill"></i>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, quam. Impedit consequuntur fuga dolores natus obcaecati aspernatur inventore maxime quod dolorum veniam quidem a, illo, enim nam placeat iusto omnis.</p>
+					<p class="list_selected"><i class="bi bi-house"></i>  Ambientes: 6<br><i class="bi bi-door-open"></i> Habitaciones: 3<br><i class="bi bi-droplet"></i> Baños: 2<br><i class="bi bi-truck"></i>  Garage: Si</p>
+
+					<a href="#confirmacion" class="btn btn-secondary card--btn" style="color:black;border:1px solid grey"><i class="bi bi-award-fill"></i> Alquilar</a>
+				</div>
+
+				<div class="ubicacion">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.2661706983379!2d-65.04725887307885!3d-42.815975398405584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe03cae0ea51d2b1%3A0x5b0f1cfe560a0ad4!2sMutisia%202465%2C%20Puerto%20Madryn%2C%20Chubut!5e1!3m2!1ses!2sar!4v1622422704482!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+
+			</div>			
+		</main>
+
+		<aside>
+			<a href="https://somosrex.com/" target="_blank" class="publicidad_1">
+				<img src="img/publi/publi1-rex/logo-rex.png" alt="logo Rex">
+				<div>
+					<p>En <strong>Pinturerías Rex</strong> te acercamos increíbles descuentos</p>
+					<p>¡Aprovechalos!</p>
+				</div>
+				<div>
+					<div class="desc-rex">
+						<p>45% OFF</p>
+					</div>
+					<p><i class="bi bi-truck"></i> Envío sin cargo</p>
+				</div>
+			</a>
+
+			<a href="https://retak.com.ar/" target="_blank" class="publicidad_2">
+				<img src="img/publi/publi2-retak/logo_retak.svg" alt="logo retak">
+				<div class="visit-retax">
+					<i class="bi bi-globe2"></i>
+					<p> Visitanos y conocenos</p>
+				</div>
+			</a>
+
+			<a href="https://www.santander.com.ar/banco/online/personas/creditos/prestamos-personales/super-prestamo" target="_blank" class="publicidad_3">
+				<img src="img/publi/publi3-santander/logo-santander.png" alt="logo santander">
+				
+				<div class="info-santander">
+					<p>Super Prestamo</p>
+					<p>Solicitá hasta <br><strong>$ 2.000.000</strong></p>
+				</div>
+			</a>
+
+			<a href="https://www.jazmeendeco.com.ar/" target="_blank" class="publicidad_4">
+				<img src="img/publi/publi4-jasmeen/logo-jazmeen.png" alt="logo">
+				<div class="publi-foot">
+					<p>
+						Muebles y Sillones para el Hogar
+					</p>
+					<p>Deco</p>
+				</div>
+				
+			</a>
+		</aside>
 	</div>
 
-	<div class="row bg-dark mb-5" style="">
-		<div class="comtainer">
-			<div class="row container p-3">
-				<div class="col-sm-3">
-					<img src="img/thumb-2.jpg" class="img-fluid img_prop" alt="propiedad">
-				</div>
+	<!-- Confirmacion de Pago -->
+	<div id="confirmacion">
+		<div class="confirm_box">
+				<a href="" class="cerrar"><i class="fas fa-times-circle" alt="cerrar"></i></a>
+			<h2 class="section_tit">Confirmar transacción</h2>
+			<form action="pago">
+				<label for="tarjeta">Nombre y Apellido
+					<input type="text" name="nombre" id="nombre">
+				</label>
+				<label for="tarjeta">N° tarjeta de Crédito
+					<input type="number" name="tarjeta" id="tarjeta">
+				</label>
+				<div>					
+					<label for="cvs">CVS
+						<input type="number" name="cvs" id="cvs">
+					</label>
 
-				<div class="col-sm-3">
-					<img src="img/thumb-2.jpg" class="img-fluid img_prop" alt="propiedad">
+					<label for="vencimiento">Fecha vencimiento
+						<input type="date" name="vencimiento" id="vencimiento">
+					</label>
 				</div>
-
-				<div class="col-sm-3">
-					<img src="img/thumb-2.jpg" class="img-fluid img_prop" alt="propiedad">
-				</div>
-
-				<div class="col-sm-3">
-					<img src="img/thumb-2.jpg" class="img-fluid img_prop" alt="propiedad">
-				</div>
-			</div>
+				<input type="button" value="CONFIRMAR">
+			</form>
 		</div>
-		
 	</div>
-
-	<div class="container mb-5">
-		<div class="row">
-		
-			<div class="col-sm">
-				<h3 class="mb-4"><i class="bi bi-house-door-fill"></i> Ambientes</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eaque harum minus. Praesentium, sunt! Nisi illo suscipit voluptate, rerum laborum hic quasi assumenda eius soluta, omnis expedita ipsa itaque nostrum!</p>
-			</div>
-			<div class="col-sm">
-				<h3 class="mb-4"><i class="bi bi-droplet-fill"></i> Baños</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eaque harum minus. Praesentium, sunt! Nisi illo suscipit voluptate, rerum laborum hic quasi assumenda eius soluta, omnis expedita ipsa itaque nostrum!</p>
-			</div>
-			<div class="col-sm">
-				<h3 class="mb-4"><i class="bi bi-door-closed-fill"></i> Living</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eaque harum minus. Praesentium, sunt! Nisi illo suscipit voluptate, rerum laborum hic quasi assumenda eius soluta, omnis expedita ipsa itaque nostrum!</p>
-			</div>
-			<div class="col-sm">
-				<h3 class="mb-4"><i class="bi bi-cone-striped"></i> Garage</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eaque harum minus. Praesentium, sunt! Nisi illo suscipit voluptate, rerum laborum hic quasi assumenda eius soluta, omnis expedita ipsa itaque nostrum!</p>
-			</div>
-		</div>
-	</div>
-
 	
 	<!-- Remate de página-->
 	<footer>

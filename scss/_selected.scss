@@ -33,6 +33,9 @@ $link:#ff4500;
             h3{
                 margin-bottom: 2rem;
             }
+            p{
+                font-size: 1rem;
+            }
             .list_selected{
                 
                     font-size: 1.4rem;
@@ -63,6 +66,7 @@ justify-content: center;
 align-items: center;
 top: 0;
 backdrop-filter: blur(0.25rem);
+z-index: 100;
     .confirm_box{
         position: relative;
         .cerrar{
@@ -73,7 +77,6 @@ backdrop-filter: blur(0.25rem);
             color:$primario
         }
         .secciontit{
-            z-index: 3;
             }
         
             form{
@@ -99,4 +102,40 @@ backdrop-filter: blur(0.25rem);
 }
 #confirmacion:target{
     display: flex;
+}
+@media (max-width:768px){
+    .main_transaccion{    
+        .prop_selected{
+            height: auto;
+            .detalles_selected{
+                .list_selected{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px){
+
+    .main_transaccion{    
+        .prop_selected{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "carrusel"
+            "detalle"
+            "ubicacion";
+            .ubicacion{
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    #confirmacion{
+        .confirm_box{
+            width: 90%;
+            .section_tit{
+                font-size: 1.6rem;
+            }
+        }
+    }
 }

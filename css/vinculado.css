@@ -322,6 +322,8 @@ header {
     flex-direction: column; }
     .main_transaccion .prop_selected .detalles_selected h3 {
       margin-bottom: 2rem; }
+    .main_transaccion .prop_selected .detalles_selected p {
+      font-size: 1rem; }
     .main_transaccion .prop_selected .detalles_selected .list_selected {
       font-size: 1.4rem; }
     .main_transaccion .prop_selected .detalles_selected a {
@@ -342,7 +344,8 @@ header {
   justify-content: center;
   align-items: center;
   top: 0;
-  backdrop-filter: blur(0.25rem); }
+  backdrop-filter: blur(0.25rem);
+  z-index: 100; }
   #confirmacion .confirm_box {
     position: relative; }
     #confirmacion .confirm_box .cerrar {
@@ -351,8 +354,6 @@ header {
       top: -2rem;
       right: -1rem;
       color: #fc0101; }
-    #confirmacion .confirm_box .secciontit {
-      z-index: 3; }
     #confirmacion .confirm_box form {
       background: #ffea00;
       padding: 1rem;
@@ -372,6 +373,23 @@ header {
 
 #confirmacion:target {
   display: flex; }
+
+@media (max-width: 768px) {
+  .main_transaccion .prop_selected {
+    height: auto; }
+    .main_transaccion .prop_selected .detalles_selected .list_selected {
+      font-size: 1.2rem; } }
+
+@media (max-width: 600px) {
+  .main_transaccion .prop_selected {
+    grid-template-columns: 1fr;
+    grid-template-areas: "carrusel" "detalle" "ubicacion"; }
+    .main_transaccion .prop_selected .ubicacion {
+      padding-left: 1rem; }
+  #confirmacion .confirm_box {
+    width: 90%; }
+    #confirmacion .confirm_box .section_tit {
+      font-size: 1.6rem; } }
 
 /* publicidad  */
 aside {
