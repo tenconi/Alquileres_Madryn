@@ -164,8 +164,7 @@ header{
                 display: flex;
             }
         }
-    }
-    
+    }    
 }
 @media (max-width:526px){
     header{
@@ -194,6 +193,7 @@ header{
     box-shadow: 0 1rem 1rem rgba(0,0,0,0.15);
     position: absolute;
     z-index: 1;
+    top:0;
     right: 15%;
     .float_tit{
         display: flex;
@@ -235,7 +235,7 @@ header{
             letter-spacing: 0.2rem;
         }
         
-    }
+    }    
 }
 #login:target, #register:target{
     display: flex;
@@ -247,9 +247,10 @@ header{
     #login, #register{
         right:0;
         left: 0;
-        margin: auto;
+        margin:auto;
     }
 }
+
 //animacion para pantallas
 @keyframes landing{
     0%{
